@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap');
+
+/*    css reset  */
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: white;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.left {
+    display: inline-block;
+/*    border: 2px solid red;*/
+    position: absolute;
+    /*    coz we want to set our left element according to parent */
+    left: 60px;
+    top: 20px;
+    padding-bottom: 10px;
+}
+
+.left img {
+    width: 75px;
+    filter: invert(100%);
+    padding-left: 35px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.left div {
+    /*    position: relative;*/
+    /*    bottom: 20px;*/
+    text-align: center;
+    line-height: 0px;
+    /*    to reduce the line height above rishabh fitness logo and below actual logo */
+    font-size: 20px;
+}
+
+.mid {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    /*    to make responsive website and to place mid in centre we have used display block and margin auto here     */
+/*    border: 2px solid green;*/
+
+}
+
+.right {
+    position: absolute;
+    /*    coz we want to set our right element according to parent     */
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+/*    border: 2px solid yellow;*/
+
+}
+
+.btn {
+    font-family: 'Baloo Bhaina 2', cursive;
+    /*    we have overrided the default font of the btn class  */
+    margin: 15px 19px;
+    background-color: black;
+    color: white;
+    padding: 1px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(128, 128, 128, 0.62);
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 28px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+.navbar li a:hover,
+.navbar li a:active {
+    text-decoration: underline;
+    color: grey;
+}
+
+.container {
+    border: 2px solid white;
+    margin: 93px 108px;
+    padding:21px 80px;
+    width: 33%;
+    border-radius: 27px;
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+}
+
+.form-group input{
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+    display: block;
+    width: 544px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 14px;
+}
+
+.container button{
+    display: block;
+    width:95%;
+    margin: 20px auto;
+    padding-top: 5px
+    
+}
