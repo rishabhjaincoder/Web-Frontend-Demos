@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>height, width, border and background</title>
+    <style>
+        #firstpara{
+            background-color: antiquewhite;
+            height: 100px;
+            width: 255px;
+            border-radius: 8px;
+            
+            border: 2px solid forestgreen;
+/*            we can write the commented portion as mentional above ina single line  */
+/*
+            border-width: 2px;
+            border-style:solid;
+            border-color: forestgreen;
+*/      }
+        
+        #secondpara{
+            background-color: rgba(42, 141, 226, 0.79);
+            height: 100px;
+            width: 255px;
+
+            border-top: 2px solid #02cc02;
+            border-bottom: 2px solid rgba(226, 26, 57, 0.79);
+            border-left: 2px solid #d8e015;
+            border-right: 2px solid #d305d3;
+            border-top-left-radius: 14px;
+            border-bottom-left-radius: 44px;
+            border-bottom-right-radius: 44px;
+            border-top-right-radius: 14px;
+        }
+        #thirdpara{
+            width: 800px;
+            height: 533px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmZOPUtr0LJqZzEsce5WqNKZ4DWAHPBAVmz5OUwBSG2ixCDt4B&usqp=CAU");
+            border: 2px solid red;
+            background-repeat: no-repeat;
+/*            we can use repeat-x or repeat-y also in background-repeat     */
+            
+            background-position: center center;
+/*            here we can use centre top or bottom right etc*/
+/*            here we can use various combinations with top bottom center and left right                 center*/
+            
+            background-position: 192px 34px;
+/*            or we can write background-position like this     */
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>this is first heading</h2>
+    <p id="firstpara">this is first paragraph</p>
+    
+    <h2>this is second heading</h2>
+    <p id="secondpara">this is second paragraph</p>
+    
+    <h2>this is third heading</h2>
+    <p id="thirdpara">this is third paragraph</p>
+    
+</body>
+</html>

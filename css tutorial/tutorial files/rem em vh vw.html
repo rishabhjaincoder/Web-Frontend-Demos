@@ -1,0 +1,47 @@
+<!--tutorial for rem and em-->
+<!-- https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            width:400px;
+            /* height: 344px; */
+            height: 100vh;
+/*vh is view height, its like perc. and take percentage of height of the view of that device and vw is view width, this is same as vh, the only difference is this works on width and vh works on height */
+            width: 100vw;
+            font-size: 10px;
+            border :2px solid red;
+        }
+    h1{
+        text-align: center;
+    }
+    #first{
+        /* font-size: 3em;
+        padding: 3em; */
+
+    }
+    #second{
+        /* font-size: 3rem;
+        padding: 3rem; */
+
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>

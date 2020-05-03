@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css tutorial</title>
+    <link rel="stylesheet" href="style.css"> <!-- this is adding external css-->
+    <style>
+        p {
+            color: purple;
+            background-color: antiquewhite !important;
+            /* here !important means give this property the highest precedence */
+            /*            inline has the highest precedence but if we put !important then that will become member with highest precedence.
+            the element which is downward wheather internal or external css has more                         precedence because it gets override automatically*/
+            /*            this is internal css      */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>this is CSS tutorial</h2> <!-- this is inline css -->
+    <p style="color: red;background-color:aqua">this tutorial will teach you everything you need to know about css</p> <br>
+    <!--    inline css has more precedence than of internal css    -->
+    <p>this tutorial will teach you everything you need to know about css</p>
+
+</body>
+
+</html>

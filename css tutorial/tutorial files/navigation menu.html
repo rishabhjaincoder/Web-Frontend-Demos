@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Navigation Menu</title>
+
+    <style>
+        * {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+
+        .navbar {
+            background-color: #d5e2ed;
+            border-radius: 6px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            /*            overflow auto is used when we use float element, background colour is gone coz of parent     */
+        }
+
+        .navbar li {
+            float: right;
+            list-style: none;
+            margin: 20px
+        }
+
+        .navbar li a {
+            padding: 13px 20px;
+            text-decoration: none;
+            color: rgba(34, 2, 62, 0.74);
+            font-weight: bold;
+        }
+
+        .navbar li a:hover {
+            color: crimson
+        }
+
+        .search {
+            float: left;
+            color: rgba(34, 2, 62, 0.74);
+            padding: 12px 75px;
+            cursor: pointer;
+            font-size: 17px
+        }
+
+        .navbar input {
+            border: 2px solid rgba(34, 2, 62, 0.74);
+            border-radius: 10px;
+            padding: 10px 10px;
+            width: 300px
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" class="search" placeholder="Search Anything :&#41">
+                </div>
+            </ul>
+        </div>
+    </header>
+</body>
+
+</html>

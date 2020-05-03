@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>forms and input tags</title>
+</head>
+
+<body>
+    <h2>html forms </h2>
+    <form action="backend.php"></form>
+    <div>
+        <label for="name">NAME : </label>
+<!--        label tag         -->
+        <input type="text" name="name" id="name">
+    </div>
+    <br>
+
+    <div>
+       <label for="roles">ROLES : </label>
+        <input type="text" name="roles" id="roles">
+    </div><br>
+
+    <div>
+       <label for="email">EMAIL : </label>
+        <input id="email" type="email" name="email">
+    </div><br>
+
+    <div>
+        <label for="mycheckbox">are you eligible : </label>
+         <input type="checkbox" name="mycheckox" id="mycheckbox" checked>
+        <!--        here checked is used to check the checkbox by default-->
+    </div><br>
+    <div>
+        <input type="submit" value="submit now">
+        <input type="reset" value="reset now">
+
+    </div><br>
+    <!--    text area    -->
+    <div>
+        write about yourself : <br><textarea name="mytext" cols="70" rows="10"></textarea>
+
+    </div>
+    <br>
+    <div>
+        <label for="car">CAR : </label>
+        <select name="mycar" id="car">
+            <option value="ind" selected>indica</option>
+<!--            selected means default-->
+            <option value="bmw">bmw</option>
+            <option value="maruti">maruti</option>
+        </select>
+    </div>
+
+    <!--    types are date, number, checkbox, radio,etc  -->
+
+</body>
+
+</html>

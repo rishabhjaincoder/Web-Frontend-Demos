@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Display Property</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        font-family: 'Ubuntu', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    header{
+        border: 2px solid black;
+        margin: auto; 
+/*        initially this will not work as display : block is enabled by default     */
+        width: 1500px;    
+/*        margin auto will work with width as they all are block element            */
+    }
+    
+    img {
+        width: 35px;
+        display: block;
+        margin: auto;
+/*        by default img is inline, so we have to make it block and use width and margin auto to take it to the centre     */
+        
+    }
+
+    h3 {
+        margin: 0px;
+        text-align: center;
+    }
+    
+    .box{
+        border: 2px solid black;
+        background-color: #d2e6e6;
+        margin: 4px 0px;
+        padding: 23px;
+        
+/*        to make element inline and we can set the width as well so we use inline-block*/
+/*        in block element the element take complete width */
+/*        in inline element, the element takes the space occupied by the element itself*/
+/*
+        but if we want to make an element work like inline but we can adjust the width,
+        so here we use display : inline-block;
+*/
+        display: inline-block;
+        width: 33%;
+        box-sizing: border-box;
+    }
+    
+    .container{
+        margin: auto;
+        width: 1500px
+    }
+
+</style>
+
+<body>
+    <header class="top">
+        <img src="https://www.pngitem.com/pimgs/m/54-548941_people-silhouette-avatar-free-picture-logo-orang-png.png" alt="">
+        <h3>Welcome to Rishabh's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sunt dolore asperiores reprehenderit omnis laborum provident earum aut doloremque maiores corrupti nihil accusamus temporibus aliquam, in tempora sapiente officiis beatae obcaecati eligendi harum voluptatibus nisi cum, ab assumenda! Molestias qui inventore magnam quo totam, voluptate quisquam delectus facere ipsum enim rem, maxime consectetur hic perspiciatis. Asperiores alias non excepturi ex.</p>
+        </div>      
+           
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sunt dolore asperiores reprehenderit omnis laborum provident earum aut doloremque maiores corrupti nihil accusamus temporibus aliquam, in tempora sapiente officiis beatae obcaecati eligendi harum voluptatibus nisi cum, ab assumenda! Molestias qui inventore magnam quo totam, voluptate quisquam delectus facere ipsum enim rem, maxime consectetur hic perspiciatis. Asperiores alias non excepturi ex.</p>
+        </div>        
+           
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sunt dolore asperiores reprehenderit omnis laborum provident earum aut doloremque maiores corrupti nihil accusamus temporibus aliquam, in tempora sapiente officiis beatae obcaecati eligendi harum voluptatibus nisi cum, ab assumenda! Molestias qui inventore magnam quo totam, voluptate quisquam delectus facere ipsum enim rem, maxime consectetur hic perspiciatis. Asperiores alias non excepturi ex.</p>
+        </div>
+    </div>
+</body>
+
+</html>

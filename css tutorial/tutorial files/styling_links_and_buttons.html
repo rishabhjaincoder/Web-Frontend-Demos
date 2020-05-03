@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pseudo selectors and more designing</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Ubuntu', sans-serif;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        
+/*        these are the pseudo selectors in css             */
+        a:hover{
+            color: firebrick;
+            background-color: cornsilk;
+        }
+        a:visited{
+            background-color: #c4f58c;    
+        }
+        a:active{
+            background-color: #ed928f
+        }
+
+        .container {
+            border: 2px solid #36d8ff;
+            background-color: #e6f4f4;
+            padding: 34px;
+            margin: 34px auto;
+            /*            margin auto will bring that thing to the centre         */
+            width: 666px;
+            border-radius: 9px;
+        }
+
+        .btn {
+            color: darkblue;
+            background-color: #f0d7cf;
+            padding: 6px;
+            border: none;
+            border-radius: 3px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            /*            cursor will tell what type of cursor to display when hover     */
+        }
+        .btn:hover{
+            background-color: rgba(102, 222, 222, 0.7);
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h2>This is my heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, placeat temporibus amet pariatur recusandae obcaecati! Sint suscipit alias repellendus eum iste provident amet et, libero at expedita, saepe officiis id.</p>
+        <a href="http://www.facebook.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>
