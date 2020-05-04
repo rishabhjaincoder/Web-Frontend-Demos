@@ -1,0 +1,244 @@
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .upper::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+        .upper{
+            width: 100%;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header {
+/*            border: 2px solid green;*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 10px;
+            padding: 20px;
+
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/1600x900/?technology');
+            /*
+            background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+*/
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .navigation {
+/*            border: 2px solid red;*/
+            width: 50%;
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-bar>li {
+            padding: 25px 30px;
+            list-style: none;
+            font-size: 30px;
+        }
+        
+        .nav-items a{
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            font-size: 32px;
+        }
+        
+        .nav-items a:hover{
+            color:darkorange;
+        }
+
+        .icon {
+            display: flex;
+/*            border: 2px solid red;*/
+            height: 130px;
+            width: 150px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .icon img {
+            width: 100px;
+            height: 100px;
+            filter: invert(100%);
+        }
+        .icon img:hover{
+            visibility: hidden;
+        }
+
+        .icon h5 {
+            margin: 4px;
+            font-size: 18px;
+        }
+
+        .content {
+/*            border: 2px solid red;*/
+            margin: 0px 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            height: 400px;
+            width: 1500px;
+            margin: 100px auto;
+        }
+
+        .content h1 {
+            font-size: 5rem;
+            align-self: center;
+        }
+
+        .content p {
+            font-size: 2rem;
+            align-self: center;
+        }
+
+        .down-button {
+            position: absolute;
+            left: 45%;
+            width: 180px;
+            text-align: center;
+            height: 30px;
+            padding-top: 6px;
+            border: 2px solid black;
+            font-size: 20px;
+            bottom: 10px;
+            border-radius: 5px;
+            background-color: black;
+            opacity: 0.7;
+        }
+        .down-button:hover{
+            background: dimgrey;
+            
+        }
+
+        .lower {
+/*            border: 2px solid red;*/
+            margin-top: 19px;
+            width: 100%;
+            background-color: white;
+            color: black;
+            z-index: -2;
+
+        }
+
+        .about {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        .about>h1 {
+            margin: 22px 14px;
+            padding: 9px 0px;
+/*            border: 2px solid red;*/
+            font-size: 56px;
+        }
+
+        .about>p {
+/*            border: 2px solid red;*/
+            margin: -8px 200px;
+            padding: 2px 15px;
+            font-size: 25px;
+        }
+
+        .img {
+            height: 300px;
+            margin: 19px auto;
+            padding: 0px 0px;
+            width: 450px;
+            cursor: pointer;
+            filter: saturate(0);
+        }
+
+        .work-images img:hover {
+            filter: saturate(1);
+            box-shadow: 0px -5px 1px 0.25px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .image-work>h1 {
+/*            border: 2px solid red;*/
+            text-align: center;
+            font-size: 52px;
+            margin: 11px;
+        }
+
+        .image-work {
+            display: flex;
+            flex-direction: column;
+/*            border: 2px solid green;*/
+            margin-top: -59px
+        }
+
+        .work-images {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+/*            border: 2px solid black;*/
+            margin: -13px 100px;
+            padding: 18px 24px;
+        }
+        
+        footer{
+            background-color: #414042;
+            width: 100%;
+            height: 50px;
+/*            border: 2px solid yellow;*/
+            display: flex;
+        }
+        .footer-links{
+/*            border: 2px solid green;*/
+            margin: 10px auto;
+            padding: 0px;
+            
+        }
+        .footer-img{
+            height: 30px;
+            width: 30px;
+            padding: 0px 10px;
+            filter: invert(1);
+            cursor: pointer;
+        }
+        .footer-img:hover{
+            filter: invert(0);
+        }
+
